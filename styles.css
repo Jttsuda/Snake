@@ -1,0 +1,66 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+#snake-grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 400px;
+  height: 400px;
+  border: 4px solid black;
+  border-radius: 7px;
+}
+#snake-grid div {
+  width: 20px;
+  height: 20px;
+}
+.snake {
+  outline: 9px solid black;
+  outline-offset: -10px;
+  outline-style: groove;
+}
+.food {
+  outline: 3px solid darkgreen;
+  outline-offset: -70px;
+  outline-style: groove;
+}
+
+/* Page Details */
+#snake-title {
+  font-size: 40px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+#snake-score {
+  display: inline-block;
+  font-size: 24px;
+  font-family: cursive;
+}
+#snake-container {
+  display: inline-block;
+  transform: translate(80px, 80px);
+  text-align: center;
+}
+#new-game-button {
+  background-color: black;
+  color: white;
+  padding: 4px;
+  margin-left: 20px;
+  margin-bottom: 4px;
+  border: 0px;
+  border-radius: 4px;
+}
+#ate-yourself {
+  font-family: cursive;
+  font-weight: bold;
+  position: fixed;
+  display: none;
+  background-color: darkgray;
+  color: white;
+  padding: 12px;
+  padding-left: 64px;
+  padding-right: 64px;
+}
+#high-score {
+  font-family: cursive;
+  font-size: 18px;
+}
